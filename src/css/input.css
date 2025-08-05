@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@layer base {
+    @font-face {
+      font-family: 'FontA';
+      font-weight: 600;
+      src: url('/src/assets/fonts/LTSuperior-SemiBold.otf') format('opentype');
+    }
+}
