@@ -2,65 +2,69 @@
 <html lang="en-us">
 
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPPV21J6YD"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-SPPV21J6YD');
     </script>
     <title>SOXIETY TECH</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/src/css/output.css" rel="stylesheet">
-
+    <style>
+        /* This is a simple fix to ensure the mobile menu is displayed correctly when toggled */
+        @media (max-width: 767px) {
+            .mobile-menu-open {
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-[#e3e2e2]">
-    <nav id="Top Bar" class="box-border size 40 flex items-center justify-between p-4 md:box-border">
+    <nav class="box-border flex items-center justify-between p-4 md:box-border">
 
         <div id="logo-section">
-            <a class="cursor-pointer flex flex-col items-center md:justify-center" href="Index.html"> <img id="logo"
-                    src="/src/assets/Images/Soxiety-Primary-Transparent.png" width="650px" alt="Soxiety Logo"></a>
+            <a class="cursor-pointer flex flex-col items-center md:justify-center" href="Index.html">
+                <img id="logo" src="/src/assets/Images/Soxiety-Primary-Transparent.png" width="650px"
+                    alt="Soxiety Logo">
+            </a>
         </div>
 
-
-
-
-
-        <div id="tabs-section"
+        <div
             class="container mx-auto flex flex-col items-center space-y-3 md:flex-row md:justify-start md:space-y-0 md:space-x-2 font-FontA">
-            <a
-                class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 font-FontA">About</a>
-            <a
-                class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 font-FontA">Services</a>
-            <a
-                class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 font-FontA">Products</a>
-            <a
-                class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 font-FontA">Contact</a>
+            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32"
+                href="#">About</a>
+            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32"
+                href="#">Services</a>
+            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32"
+                href="#">Products</a>
+            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32"
+                href="#">Contact</a>
         </div>
 
-        <button id="hamburger" class="md:hidden">
-            <svg class="h-6 w-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
-        <div id="mobile-menu" class="hidden md:flex md:items-center md:space-x-2 w-full md:w-auto">
-            <div id="Login Section"
-            class="container mx-auto flex flex-col items-center space-y-3 md:justify-center">
-            <div id="login-page" class="flex items-center md:space-x-2">
-                <a class="text-red-500 font-semibold hover:text-red-600 font-FontA w-full max-w-sm md:max-w-32"
+        <div class="flex items-center space-x-2">
+            <div id="mobile-login-menu"
+                class="hidden md:flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-2">
+                <a class="text-red-500 font-semibold hover:text-red-600 font-FontA w-full max-w-sm md:max-w-32 text-center"
                     href="/src/html/login.html">Login</a>
-                <a class="bg-gray-400 rounded-full px-6 py-2 text-white font-semibold hover:text-red-600 hover:bg-white max-w-sm font-FontA md:max-w-32"
+                <a class="bg-gray-400 rounded-full px-6 py-2 text-white font-semibold hover:text-red-600 hover:bg-white max-w-sm font-FontA w-full md:max-w-32 text-center"
                     href="/src/html/login.html">Sign Up</a>
             </div>
-        </div>
-        </div>
-        </div>
 
+            <button id="hamburger" class="md:hidden">
+                <svg class="h-6 w-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
         </div>
 
     </nav>
@@ -68,10 +72,11 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLoginMenu = document.getElementById('mobile-login-menu');
 
         hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            mobileLoginMenu.classList.toggle('hidden');
+            mobileLoginMenu.classList.toggle('mobile-menu-open');
         });
     });
 </script>
