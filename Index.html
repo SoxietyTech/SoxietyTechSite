@@ -13,8 +13,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/src/css/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/src/assets/Images/Soxiety-Primary-Transparent.png">
     <style>
-        /* This is a simple fix to ensure the mobile menu is displayed correctly when toggled */
         @media (max-width: 767px) {
             .mobile-menu-open {
                 display: flex !important;
@@ -27,37 +27,35 @@
     </style>
 </head>
 
-<body class="bg-[#e3e2e2]">
-    <nav class="box-border flex items-center justify-between p-4 md:box-border">
-
+<body class="bg-[#e3e2e2] m-0 p-0">
+    <nav class="box-border flex items-center justify-between md:box-border">
         <div id="logo-section">
-            <a class="cursor-pointer flex flex-col items-center md:justify-center" href="Index.html">
-                <img id="logo" src="/src/assets/Images/Soxiety-Primary-Transparent.png" width="650px"
+            <a class="cursor-pointer items-center md:justify-start" href="Index.html">
+                <img id="logo" src="/src/assets/Images/Soxiety-Primary-Transparent.png" width="700px"
                     alt="Soxiety Logo">
             </a>
         </div>
-
         <div
-            class="container mx-auto flex flex-col items-center space-y-3 md:flex-row md:justify-start md:space-y-0 md:space-x-2 font-FontA">
-            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32"
+            class="container mb-25 ml-11 mx-auto flex flex-col items-center space-y-3 md:flex-row md:justify-start md:space-y-0 md:space-x-2">
+            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 hover:bg-black hover:text-red-500"
                 href="#">About</a>
-            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32"
+            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 hover:bg-black hover:text-red-500"
                 href="#">Services</a>
-            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32"
+            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 hover:bg-black hover:text-red-500"
                 href="#">Products</a>
-            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32"
+            <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 hover:bg-black hover:text-red-500"
                 href="#">Contact</a>
         </div>
-
         <div class="flex items-center space-x-2">
             <div id="mobile-login-menu"
-                class="hidden md:flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-2">
+                class="hidden md:flex mb-35 mr-20 flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-2 ">
                 <a class="text-red-500 font-semibold hover:text-red-600 font-FontA w-full max-w-sm md:max-w-32 text-center"
                     href="/src/html/login.html">Login</a>
                 <a class="bg-gray-400 rounded-full px-6 py-2 text-white font-semibold hover:text-red-600 hover:bg-white max-w-sm font-FontA w-full md:max-w-32 text-center"
                     href="/src/html/login.html">Sign Up</a>
+                    <div id="app"></div>
+                    <script type="module" src="/main.js"></script>
             </div>
-
             <button id="hamburger" class="md:hidden">
                 <svg class="h-6 w-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
@@ -66,8 +64,12 @@
                 </svg>
             </button>
         </div>
+    </nav>
+
+    <nav class="box-border md:box-border">
 
     </nav>
+
 </body>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
