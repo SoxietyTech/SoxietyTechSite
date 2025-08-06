@@ -30,13 +30,13 @@
 <body class="bg-[#e3e2e2] m-0 p-0">
     <nav class="box-border flex items-center justify-between md:box-border">
         <div id="logo-section">
-            <a class="cursor-pointer items-center md:justify-start" href="Index.html">
-                <img id="logo" src="/src/assets/Images/Soxiety-Primary-Transparent.png" width="700px"
+            <a class="cursor-pointer lg:items-center md:justify-start" href="Index.html">
+                <img id="logo" src="/src/assets/Images/Soxiety-Primary-Transparent.png" width="1000px"
                     alt="Soxiety Logo">
             </a>
         </div>
         <div
-            class="container mb-25 ml-11 mx-auto flex flex-col items-center space-y-3 md:flex-row md:justify-start md:space-y-0 md:space-x-2">
+            class="md:container md:mb-25  mx-auto flex flex-col items-center space-y-3 md:flex-row md:justify-center md:space-y-0 md:space-x-2">
             <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 hover:bg-black hover:text-red-500"
                 href="#">About</a>
             <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 hover:bg-black hover:text-red-500"
@@ -46,39 +46,27 @@
             <a class="bg-red-500 rounded-full px-6 py-2 font-bold text-white text-center w-full max-w-sm md:max-w-32 hover:bg-black hover:text-red-500"
                 href="#">Contact</a>
         </div>
-        <div class="flex items-center space-x-2">
-            <div id="mobile-login-menu"
-                class="hidden md:flex mb-35 mr-20 flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-2 ">
-                <a class="text-red-500 font-semibold hover:text-red-600 font-FontA w-full max-w-sm md:max-w-32 text-center"
-                    href="/src/html/login.html">Login</a>
-                <a class="bg-gray-400 rounded-full px-6 py-2 text-white font-semibold hover:text-red-600 hover:bg-white max-w-sm font-FontA w-full md:max-w-32 text-center"
-                    href="/src/html/login.html">Sign Up</a>
-            </div>
-            <button id="hamburger" class="md:hidden">
-                <svg class="h-6 w-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                    </path>
-                </svg>
-            </button>
+        <div class="container mb-25 mr-30 mx-auto flex flex-col items-center  md:flex-row md:justify-end ">
+            <a class="text-red-500   font-semibold hover:text-red-600 font-FontA md:w-full max-w-sm md:max-w-32 text-center md:ml-60"
+                href="/src/html/login.html">Login</a>
+            <a class="bg-gray-400 rounded-full px-3 py-2 text-white font-semibold hover:text-red-600 hover:bg-white max-w-sm font-FontA w-full md:max-w-32 text-center"
+                href="/src/html/login.html">Sign Up</a>
+
         </div>
     </nav>
 
-    <nav class="box-border md:box-border">
-
+    <nav id="hero" class="box-border md:box-border mt-2 font-mono font-semibold text-shadow-stone-900">
+        <nav id="soxiety-p-t-h" class="text-5xl font-sans text-center font-extrabold">
+            <h1 id="header" class="mt-10">
+                WELCOME TO OUR WORLD
+            </h1>
+            <h2 id="sub-header" class="text-2xl mt-5">
+                MAKING <span class="text-red-600 animate-pulse">DREAMS</span> COME TRUE
+            </h2>
+        </nav>
     </nav>
 
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const hamburger = document.getElementById('hamburger');
-        const mobileLoginMenu = document.getElementById('mobile-login-menu');
 
-        hamburger.addEventListener('click', () => {
-            mobileLoginMenu.classList.toggle('hidden');
-            mobileLoginMenu.classList.toggle('mobile-menu-open');
-        });
-    });
-</script>
 
 </html>
