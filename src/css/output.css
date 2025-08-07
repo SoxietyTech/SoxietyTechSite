@@ -863,6 +863,11 @@
       margin: calc(var(--spacing) * 10);
     }
   }
+  .md\:mx-auto {
+    @media (width >= 48rem) {
+      margin-inline: auto;
+    }
+  }
   .md\:-mt-10 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * -10);
@@ -1091,6 +1096,11 @@
   .md\:w-full {
     @media (width >= 48rem) {
       width: 100%;
+    }
+  }
+  .md\:w-max {
+    @media (width >= 48rem) {
+      width: max-content;
     }
   }
   .md\:max-w-1\/2 {
