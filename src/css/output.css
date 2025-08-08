@@ -675,6 +675,26 @@
       }
     }
   }
+  .hover\:shadow-\[\#e3e2e2\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow-color: #e3e2e2;
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-shadow-color: color-mix(in oklab, #e3e2e2 var(--tw-shadow-alpha), transparent);
+        }
+      }
+    }
+  }
+  .hover\:shadow-white {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow-color: #fff;
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-shadow-color: color-mix(in oklab, var(--color-white) var(--tw-shadow-alpha), transparent);
+        }
+      }
+    }
+  }
   .hover\:text-shadow-black {
     &:hover {
       @media (hover: hover) {
