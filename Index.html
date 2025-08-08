@@ -21,23 +21,11 @@
     <meta name="keywords"
         content="Soxiety Tech, technology solutions, software development, web design, IT consulting, digital transformation, custom software, tech company, Charlotte Tech, Ja'Quis Franklin, Ja'Quis May, UNCC">
     <meta name="author" content="Soxiety Tech">
-    <style>
-        @media (max-width: 767px) {
-            .mobile-menu-open {
-                display: flex !important;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                margin-top: 1rem;
-            }
-        }
-    </style>
-
 </head>
 
 <body class="bg-[#e3e2e2] m-0 p-0">
     <!--The top bar for links to other pages-->
-    <nav class="box-border flex items-center justify-between md:box-border">
+    <section id="top-bar" class="box-border flex items-center justify-between md:box-border">
         <div id="logo-section">
             <a class="cursor-pointer lg:items-center md:justify-start" href="Index.html">
                 <img id="logo" src="/src/assets/Images/Soxiety-Primary-Transparent.png" width="1000px"
@@ -74,10 +62,11 @@
             <div id="signup-tab"
                 class="lg:translate-x-1/6 sm:translate-x-1 transition duration-300 ease-in-out hover:-translate-y-1 hover:translate-3 hover:scale-110">
                 <a class="bg-gray-400 rounded-full px-3 py-2 text-white font-semibold hover:text-red-600 hover:bg-white w-24 font-FontA text-center"
-                    href="/src/html/login.html">Sign Up</a>
+                    href="/src/html/login.html" aria-label="Sign Up for a Client account">Sign Up</a>
             </div>
             <div id="IG-picture"
-                class="md:translate-6 md:-translate-y-0.5 transition duration-300 ease-in-out hover:-translate-y-3 hover:translate-6 cursor-pointer">
+                class="md:translate-6 md:-translate-y-0.5 transition duration-300 ease-in-out hover:-translate-y-3 hover:translate-6 cursor-pointer"
+                aria-label="Visit our Instagram">
                 <svg fill="#000000" width="50px" height="50px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                     onclick="window.open('https://www.instagram.com/soxiety_tech/')">
                     <path
@@ -87,7 +76,7 @@
                 </svg>
             </div>
         </div>
-    </nav>
+    </section>
 
     <!--Hero Tab for the website-->
     <section id="hero"
@@ -107,16 +96,16 @@
 
         <section id="cta" class="p-10 text-white text-2xl text-center mt-11">
             <div id="client-form" class="inline-block">
-                <a
-                    class="inline-block bg-red-500 text-white uppercase rounded-full px-6 py-2 cursor-pointer
-                transition duration-300 ease-in-out hover:bg-white hover:text-red-500 hover:-translate-y-1 hover:-translate-x-4 hover:scale-110 hover:shadow-2xl">
+                <a class="inline-block bg-red-500 text-white uppercase rounded-full px-6 py-2 cursor-pointer
+                transition duration-300 ease-in-out hover:bg-white hover:text-red-500 hover:-translate-y-1 hover:-translate-x-4 hover:scale-110 hover:shadow-2xl"
+                    href="/src/html/newClient.html">
                     Become a client
                 </a>
             </div>
             <div id="client-page" class="inline-block">
-                <a
-                    class="inline-block text-black uppercase rounded-full px-6 py-2 cursor-pointer
-                transition duration-300 ease-in-out hover:bg-white hover:text-red-500 hover:-translate-y-1 hover:translate-x-3 hover:scale-110 hover:shadow-xl">
+                <a class="inline-block text-black uppercase rounded-full px-6 py-2 cursor-pointer
+                transition duration-300 ease-in-out hover:bg-white hover:text-red-500 hover:-translate-y-1 hover:translate-x-3 hover:scale-110 hover:shadow-xl"
+                    href="/src/html/client.html">
                     View our clients
                 </a>
             </div>
@@ -124,8 +113,8 @@
     </section>
 
     <!--The Content Section of the Website-->
-    <section id="content" class="bg-gray-200 shadow-2xl mt-10 pt-3">
-        <div class="container md:mx-auto md:w-max">
+    <main id="content" class="bg-gray-200 shadow-2xl mt-10 pt-3">
+        <section id="content-section" class="container md:mx-auto md:w-max scroll-smooth">
             <div id="who-section">
                 <div id="best-text" class="">
                     <h3 id="who-are-we"
@@ -134,32 +123,32 @@
                     </h3>
                 </div>
             </div>
-            <div class="flex flex-col md:flex-row mt-10">
-                <nav class="shadow-2xl bg-black md:w-1/2 md:mb-20 ">
+            <section id="first-content-section" class="flex flex-col md:flex-row mt-10 ">
+                <div id="slogan-pic-text" class="shadow-2xl bg-black md:w-1/2 md:mb-20 ">
                     <div id="slogan-text">
                         <p class="text-xl text-center text-white font-semibold uppercase">
-                            Soxiety is all about maiking <span class="text-red-500">dreams</span> come true for all of
+                            Soxiety is all about making <span class="text-red-500">dreams</span> come true for all of
                             our
                             clients.
                         </p>
                     </div>
-                    <div class="">
+                    <div id="gif-image">
                         <img height="500" width="1000" src="/src/assets/Images/SOXIETY-PromoEarth (1350 x 1080 px).gif">
                     </div>
-                </nav>
-                <nav class="bg-gray-200 md:w-1/2 md:mb-20 sm:mb-50 md:pt-35 md:pl-15">
+                </div>
+                <div id="action-links" class="bg-gray-200 md:w-1/2 md:mb-20 sm:mb-50 md:pt-35 md:pl-15">
                     <div id="website-link">
                         <a href="/src/html/client.html"
                             class="flex md:max-w-1/3 text-lg text-start md:ml-10 font-mono font-extrabold uppercase transition duration-300 ease-in-out hover:text-red-500 hover:underline hover:-translate-y-1 hover:translate-x-4 hover:scale-110 cursor-pointer">
                             Need a Website &rarr;</a>
-                        </h2>
+
                     </div>
                     <div id="website-desc">
                         <p class="font-FontA font-semibold md:ml-10 md:mt-5">We can create you a stunning website for
                             your
                             company,
                             product,
-                            or sercice!!</p>
+                            or service!!</p>
                     </div>
                     <div id="software-link" class="md:mt-10">
                         <a href="/src/html/client.html"
@@ -171,7 +160,7 @@
                             customers or staff to use!!</p>
                     </div>
                     <div id="poster-link" class="md:mt-10">
-                        <a href="/src/html/client.html"
+                        <a href="/src/html/newClient.html"
                             class="flex md:max-w-1/2 text-lg text-start md:ml-10 font-mono font-extrabold uppercase  transition duration-300 ease-in-out hover:text-red-500 hover:underline hover:-translate-y-1 hover:translate-x-5 hover:scale-110 cursor-pointer">
                             Need Digital Marketing Assets &rarr;</a>
                     </div>
@@ -180,22 +169,106 @@
                             and
                             posters for your digital branding.</p>
                     </div>
-                </nav>
-            </div>
-            <nav id="image-2" class="container flex flex-col md:mt-20 shadow-2xl pl-0 bg-gray-50 md:ml-auto md:w-1/2">
-                <div class="md:mb-15 md:justify-center">
-                    <p class="text-xl text-center text-black font-semibold uppercase mt-5 md:ml-10 max-w">
-                        We make sure that you stand out with your comapny whether it's <br />
-                        the website, software, online marketing, or whatever you need.
-                    </p>
                 </div>
-                <div class="flex sm:text-center justify-center md:ml- md:-mt-30">
-                    <img width="700" src="/src/assets/images/FILE ORGANIZER.svg" alt="File-Organizer Logo">
+            </section>
+            <section id="service-links" class="flex flex-col md:mt-20 md:flex-row">
+                <div id="service-nav" class="md:mt-20 container flex flex-col pl-0 bg-gray-200 md:w-1/2 md:pt-10">
+                    <div class="md:mb-15 md:mt-20 md:justify-center md:ml-10">
+                        <div class="md:mt-10 mb-5 font-sans font-bold text-3xl uppercase">
+                            <h3>Interested in our services?</h3>
+                        </div>
+                        <div id="pricing-link">
+                            <a
+                                class="flex md:w-2/3 uppercase hover:cursor-pointer transition hover:translate-x-3 hover:text-gray-700 hover:text-shadow-black hover:font-extrabold hover:text-2xl">View
+                                our services and pricing &rarr;</a>
+                        </div>
+                        <div class="md:mt-10 mb-5 font-sans font-bold text-3xl uppercase">
+                            <h3>Are we legit?</h3>
+                        </div>
+                        <div id="portfolio-link">
+                            <a
+                                class="flex md:w-1/2 uppercase hover:cursor-pointer transition hover:translate-x-3 hover:text-gray-700 hover:text-shadow-black hover:font-extrabold hover:text-2xl">View
+                                our portfolio &rarr;</a>
+                        </div>
+                        <div class="md:mt-10 mb-5 font-sans font-bold text-3xl uppercase">
+                            <h3>Ready to make your <span class="text-red-500 animate-pulse delay-150">dreams</span> come
+                                true?</h3>
+                        </div>
+                        <div id="estimate-link w-1/3">
+                            <a
+                                class="flex md:w-1/2 uppercase hover:cursor-pointer transition hover:translate-x-3 hover:text-gray-700 hover:text-shadow-black hover:font-extrabold hover:text-2xl">Get
+                                an estimate &rarr;</a>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-    </section>
-    </div>
+                <div id="image-2"
+                    class="container flex flex-col md:mt-20 shadow-2xl pl-0 bg-gray-50 md:ml-auto md:w-1/2">
+                    <div class="md:mb-15 md:justify-center md:mr-10">
+                        <p class="text-xl text-center text-black font-semibold uppercase mt-5 md:ml-10 max-w">
+                            We make sure that you stand out with your company whether it's
+                            the website, software, online marketing, or whatever you need.
+                        </p>
+                    </div>
+                    <div class="flex sm:text-center justify-center md:ml- md:-mt-30">
+                        <img width="700" src="/src/assets/images/FILE ORGANIZER.svg" alt="File-Organizer Logo">
+                    </div>
+                </div>
+            </section>
 
+        </section>
+    </main>
+    <section id="future">
+        | <h2 class="md:justify-center text-center font-extrabold uppercase p-25">Ready for the future?</h2>
+    </section>
+    <section
+        class="bg-black text-white font-extrabold font-sans text-4xl  flex pt-10 shadow-red-500 shadow-2xl text-center ">
+
+        <div
+            class="container bg-red-500 hover:shadow-2xl hover:shadow-[#e3e2e2] bg-blend-overlay md:w-3/5 md:mt-25 md:ml-10 p-10 transition ease-in-out duration-500 hover:-translate-y-3">
+            <div id="AI-Stuff" class="pb-20 ">
+                <h2 class="pb-10 text-center text-6xl">AI</h2>
+                <h3 class="text-3xl uppercase text-start">If you are looking to create an AI chatbot for your
+                    company</h3>
+                <a
+                    class="flex mt-7 font-light transition ease-in-out duration-200 w-1/3 hover:underline hover:text-5xl uppercase md:justify-start md:text-start text-2xl hover:5xl hover:translate-x-3 hover:cursor-pointer hover:-translate-y-3">We
+                    got you &rAarr;</a>
+                <button
+                    class="mt-7 md:justify-center border-2 border-[#e3e2e2] hover:border-white uppercase text-base rounded-full p-2 font-medium hover:bg-white hover:text-red-500 trasition ease-in-out duration-300 hover:-translate-y-2">
+                    We can make you a polished page for your AI chatbot for anything from a prompt engine to a cooking
+                    page!!
+                </button>
+                <h3 class="text-3xl uppercase text-start md:mt-10">If you Need automation for services within your
+                    company's technology
+                </h3>
+                <a
+                    class="flex mt-7 font-light transition ease-in-out duration-200 w-1/3 hover:underline hover:text-5xl uppercase md:justify-start md:text-start text-2xl hover:5xl hover:translate-x-3 hover:cursor-pointer hover:-translate-y-3">We
+                    got you &rAarr;</a>
+                <button
+                    class="mt-5 md:justify-center border-2 border-[#e3e2e2] hover:border-white uppercase text-base rounded-full p-2 font-medium hover:bg-white hover:text-red-500 trasition ease-in-out duration-300 hover:-translate-y-2">
+                    We offer services for application and software automation!!
+                </button>
+                <h3 class="text-3xl uppercase text-start md:mt-10">If you simply just want to know how to use the AI
+                    tools
+                </h3>
+                <a
+                    class="flex mt-7 font-light transition ease-in-out duration-200 w-1/3 hover:underline hover:text-5xl uppercase md:justify-start md:text-start text-2xl hover:5xl hover:translate-x-3 hover:cursor-pointer hover:-translate-y-3">We
+                    got you &rAarr;</a>
+                <button
+                    class="mt-5 md:justify-center border-2 border-[#e3e2e2] hover:border-white uppercase text-base rounded-full p-2 font-medium hover:bg-white hover:text-red-500 trasition ease-in-out duration-300 hover:-translate-y-2">
+                    We can assist with in person lessons on how to use Soxiety's AI tools!!
+                </button>
+            </div>
+
+        </div>
+        <div id="Image" class="md:ml-25 md:mt-15 md:pt-45">
+            <img src="/src/assets/Images/Soxiety-Secondary.png" width="600" class="md:ml-auto md:mr-auto">
+            <h2 class="uppercase text-lg text-center font-light">Soxiety's Mission is to ensure you are prepared for the
+                <span class="text-red-500 font-extrabold shadow-2xl">future</span>
+            </h2>
+        </div>
+    </section> 
+    <footer>
+    </footer>
     <script src="/src/js/index.js"></script>
 </body>
 
