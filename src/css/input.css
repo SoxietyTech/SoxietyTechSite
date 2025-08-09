@@ -6,4 +6,20 @@
       font-weight: 600;
       src: url('/src/assets/fonts/LTSuperior-SemiBold.otf') format('opentype');
     }
+    .grainy-black {
+      position: relative;
+      overflow: hidden;
+    }
+    .grainy-black::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 100%) 0 0 / 4px 4px,
+        radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 100%) 2px 2px / 4px 4px;
+      mix-blend-mode: overlay; /* keeps the black underneath */
+      pointer-events: none;
+    }
 }
+
+
