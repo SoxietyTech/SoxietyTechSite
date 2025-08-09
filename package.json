@@ -1,0 +1,25 @@
+{
+  "name": "soxietytechsite",
+  "version": "1.0.0",
+  "description": "The repository for the website of Soxiety Tech",
+  "main": "sandbox.js",
+  "scripts": {
+    "start": "node sandbox.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JQbeCoding/SoxietyTechSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JQbeCoding/SoxietyTechSite/issues"
+  },
+  "homepage": "https://github.com/JQbeCoding/SoxietyTechSite#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1"
+  }
+}
