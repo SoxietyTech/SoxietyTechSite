@@ -10,8 +10,32 @@ function playVideo() {
   var playBtn = (document.getElementById("play").style = "display: none");
   vid.play();
 }
-function appear()
-{
-   var aiSec = document.getElementById("AI");
-   aiSec.style.display = 'flex'
+
+function aiLink() {
+  window.open("/src/html/ai.html", "_self");
 }
+function appear() {
+  var aiSec = document.getElementById("AI");
+  var serviceSec = document.getElementById("service-links");
+  if (!aiSec) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      aiSec.animate(
+        [
+          { opacity: 0, transform: "translateY(20px)" },
+          { opacity: 1, transform: "translateY(0)" },
+        ],
+        {
+          duration: 1000,
+          easing: "ease-out",
+          fill: "forwards",
+        }
+      );
+      observer.unobserve(aiSec);
+    }
+  });
+
+  observer.observe(aiSec);
+}
+appear();
