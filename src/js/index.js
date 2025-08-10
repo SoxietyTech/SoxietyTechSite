@@ -30,7 +30,7 @@ function appear() {
           duration: 1000,
           easing: "ease-out",
           fill: "forwards",
-        }
+        },
       );
       observer.unobserve(aiSec);
     }
@@ -39,3 +39,13 @@ function appear() {
   observer.observe(aiSec);
 }
 appear();
+
+function workingOnAPI() {
+  var prompt = document.getElementById("prompt");
+  prompt.style = "display: none";
+
+  document.getElementById("response").style = "display: inline";
+  document.getElementById("response").innerText =
+    "Soxiety Work in Progress.";
+  console.log('submit')
+}

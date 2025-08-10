@@ -307,11 +307,33 @@
         </div>
     </section>
     <!--Section is a placeholder-->
+    <div class="bg-black text-center md:flex font-extrabold font-sans text-4xl md:pb-20 md:pt-25 shadow-2xl">
+        <div id="AI-section2"
+            class="bg-[#e3e2e2] md:p-25 justify-center container md:flex rounded-3xl bg-radial hover:shadow-2xl hover:shadow-[#e3e2e2] bg-blend-overlay md:w-1/2 md:mr-10 md:ml-auto transition ease-in-out duration-500 hover:-translate-y-3">
+            <div id="Title" class="md:justify-center md:align-middle text-center">
+                <h2 class="text-3xl text-red font-semibold uppercase">Need a demonstration?</h2>
+            </div>
+        </div>
+    </div>
     <div class="bg-black text-center md:flex font-extrabold font-sans text-4xl md:pb-20 md:pt-10 shadow-2xl">
         <div id="AI-section2"
-            class="bg-[#e3e2e2] p-5 justify-center container flex rounded-3xl bg-radial hover:shadow-2xl hover:shadow-red-500 bg-blend-overlay md:w-4/5  md:ml-auto md:mr-10 md:p-20 transition ease-in-out duration-500 hover:-translate-y-3">
+            class="bg-gradient-to-tr from-red-500 to-zinc-900 md:pt-20 md:pb-20 justify-center container rounded-3xl hover:shadow-2xl hover:shadow-red-500 bg-blend-overlay md:w-1/2  md:mr-auto md:ml-10 transition ease-in-out duration-500 hover:-translate-y-3">
             <div id="Title">
-                <h2 class="text-5xl text-red font-semibold uppercase">YOOO What's Up!!!</h2>
+                <h2
+                    class="text-2xl bg-gradient-to-tr from-zinc-50 to-red-500 bg-clip-text text-transparent text-shadow-2xl font-semibold uppercase mb:10">
+                    Test it out with any prompt</h2>
+            </div>
+            <div id>
+                <form id="user-input" class="mt-5" onsubmit="event.preventDefault(); workingOnAPI() ">
+                    <label for="prompt">
+                    </label>
+                    <input
+                        class="text-lg shadow appearance-none border rounded-full p-3 text-white focus:outline-none focus:shadow-outline curso"
+                        id="prompt" type="text" placeholder="Tell me about Charlotte, NC">
+                </form>
+                <div>
+                    <p id="response" class="p-3 text-white text-lg hidden"></p>
+                </div>
             </div>
         </div>
     </div>
